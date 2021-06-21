@@ -103,4 +103,18 @@ const lastedLong2 = companies.some((c) => c.end - c.start > 25);
 const lastedFiveYears = companies.every((c) => c.end - c.start >= 5);
 
 
-console.log(lastedFiveYears);
+// destructuring destructuring destructuring destructuring destructuring 
+const employee = ['jacob', 'couch', 'male'];
+
+// pull variables out of the array
+//age is undefined
+const [fname, lname, gender, age] = employee;
+// only pull out the third element
+const [, , myGender] = employee;
+// elements contains and array of the 2nd and 3rd elements of employee
+const [, ...elements] = employee;
+// give a default
+const [, , , age2=26] = employee;
+
+console.log(age2);
+
