@@ -37,3 +37,9 @@ const user = {
    for(let x in user){
     console.log(`${x} : ${user[x]}`);
   }
+
+
+const arr = [1,3,5,7,9];
+for (let i of arr) {
+  console.log(i);
+}
